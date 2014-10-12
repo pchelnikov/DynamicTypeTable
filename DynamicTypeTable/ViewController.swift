@@ -43,14 +43,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return rows.count
     }
     
-//    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 44.0
-//    }
-    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath) as DynamicCell
         
-//        cell.textLabel?.text = rows[indexPath.row]
         cell.headlineLabel.text = rows[indexPath.row]
         
         return cell
