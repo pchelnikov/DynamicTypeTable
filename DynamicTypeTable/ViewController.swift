@@ -44,7 +44,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
 //    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-//        return 44.0
+//        return 44.0 
 //    }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
