@@ -11,11 +11,12 @@ import UIKit
 class DynamicCell: UITableViewCell {
     var headlineLabel: UILabel!
     
-    override init?(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         headlineLabel = UILabel(frame: bounds.rectByInsetting(dx: 15.0, dy: 0.0))
-        headlineLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+//        headlineLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleHeadline)
+        headlineLabel.font = UIFont.systemFontOfSize(20.0)
         headlineLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
         headlineLabel.numberOfLines = 0
         
